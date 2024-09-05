@@ -4468,7 +4468,7 @@ print '<div class="container col-lg-6">
     <div class="col-lg-6"><br>
         <label for="well">Instruction</label>
         <div id="well" class="well well">
-		<center><h4><center><a href="https://horux.al" target="_blank" class="noble-ui-logo d-block mb-2">HORUX<span>-SHOP</span></a></center></h4></center>
+		
             <h4>Server Information</h4>
             <ul>
                 <li>Server IP Address : <b>'.$_SERVER['SERVER_ADDR'].' </b> <a href="?check_ip='.$_SERVER['SERVER_ADDR'].'" target="_blank" class="label label-primary">Check Blacklist <i class="glyphicon glyphicon-search"></i></a></li>
