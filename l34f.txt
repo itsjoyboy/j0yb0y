@@ -90,7 +90,7 @@ if(isset($_GET['check_ip'])){
 
         exit;
     }
-    $dnsbl_lookup = [
+    $dnsbl_lookup = array(
         "all.s5h.net",
         "b.barracudacentral.org",
         "bl.spamcop.net",
@@ -145,7 +145,7 @@ if(isset($_GET['check_ip'])){
         "z.mailspike.net",
         "zen.spamhaus.org",
         "zombie.dnsbl.sorbs.net",
-    ];
+    );
     $reverse_ip = implode(".", array_reverse(explode(".", $_GET['check_ip'])));
     $dnsT = count($dnsbl_lookup);
     leafheader();
